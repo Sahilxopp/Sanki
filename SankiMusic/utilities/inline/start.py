@@ -8,13 +8,13 @@ def start_pannel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     buttons = [
         [
             InlineKeyboardButton(
-                text="≽ ᴄᴏᴍᴍᴀɴᴅs ≼",
+                text="Cᴏᴍᴍᴀɴᴅs",
                 url=f"https://t.me/{BOT_USERNAME}?start=help",
             )
         ],
         [
             InlineKeyboardButton(
-                text="✮ sᴇᴛᴛɪɴɢs ✮", callback_data="settings_helper"
+                text="Sᴇᴛᴛɪɴɢs", callback_data="settings_helper"
             )
         ],
      ]
@@ -25,26 +25,27 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     buttons = [
         [
             InlineKeyboardButton(
-                text="ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ",
+                text="Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ",
                 url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
             )
         ],
         [
             InlineKeyboardButton(
-                text="❀⋟ ʜᴇʟᴘ ⋞❀", callback_data="settings_back_helper"
+                text="Hᴇʟᴘ", callback_data="settings_back_helper"
             )
         ],
         [
             InlineKeyboardButton(
-                text="✭ ᴜᴘᴅᴀᴛᴇs ✭", url=config.SUPPORT_CHANNEL
+                text="Uᴘᴅᴀᴛᴇs", url=config.SUPPORT_CHANNEL
             ),
             InlineKeyboardButton(
-                text="✭ sᴜᴘᴘᴏʀᴛ ✭", url=config.SUPPORT_GROUP
-            )
-        ],
-        [
+                text="Sᴜᴘᴘᴏʀᴛ", url=config.SUPPORT_GROUP
+            ),
             InlineKeyboardButton(
-                text="✮ sᴏᴜʀᴄᴇ ✮", url="https://github.com/XdityaHalder/SankiMusic"
+                text="Sᴏᴜʀᴄᴇ", url="https://te.legra.ph/file/d1ac5371d520226e87afa.mp4"
+            ),
+            InlineKeyboardButton(
+                text="Oᴡɴᴇʀ", user_id=OWNER
             )
         ]
      ]
